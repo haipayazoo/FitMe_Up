@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/enterFoodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Food Item"
+        />
+
+    <EditText
+        android:id="@+id/enterCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Calories"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:text="Add Item"
+        android:backgroundTint="@android:color/background_dark"
+        android:textColor="#599" />
+
+    <RelativeLayout
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!--Changed layout width, added 3 codes below height-->
+        <TextView
+            android:id="@+id/foodCategory"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="#599"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:text="Food Items"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/total"
+            android:layout_toEndOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textColor="#599"
+            android:textSize="14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="100px"
+            android:layout_marginRight="100px"
+            android:text="Calories" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="150px"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Total" />
+
+        <TextView
+            android:id="@+id/totalItems"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/total"
+            android:layout_toRightOf="@+id/total"
+            />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView4"
+            android:id="@+id/Calzone" />
+    </RelativeLayout>
+
+
+    <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:text = "blah"
+                android:id="@+id/total"
+                />
+        </RelativeLayout>
+    -->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:background="#602421"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns = "1,2">
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
